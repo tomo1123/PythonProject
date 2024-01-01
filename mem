@@ -1,5 +1,0 @@
-import memcache
-
-db = memcache
-
-db
