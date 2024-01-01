@@ -20,4 +20,8 @@ with open('data.pickle', 'wb') as f:
 
 with open('data.pickle', 'rb') as f:
     data_loaded = pickle.load(f)
-    print(data_loaded['d'].name)
+    print(type(data_loaded['a']))
+    print(type(data_loaded['b']))
+    print(type(data_loaded['c']))
+    print(type(data_loaded['d']))
+   
