@@ -10,8 +10,24 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'hello world'
-  
+    return 'TOP'
+
+@app.route('/hello/<username>')  
+def hello_world2(username):
+    return 'hello world! {}'.format(username)
+
+@app.route('/hello/<username>') 
+def hello_world2(username=None):
+    return 'hello world! {}'.format(username)  
+
+@app.route('/hello/<username>') 
+def hello_world2(username=None):
+    return 'hello world! {}'.format(username)
+
+@app.route('/post', methods=['POST', 'PUT', 'DELETE']) 
+def show_post():
+    return str(request.values['username'])
+
 def main():
     app.debug = True
     app.run()
