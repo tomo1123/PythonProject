@@ -11,23 +11,29 @@ from flask import flash
 app = Flask(__name__)
 
 
-@app.route('/hello')
-@app.route('/hello/<username>') 
-def hello_world2(username=None):
-    return render_template('hello.html', username=username)
+def get_db():
+    if 'db' not in g:
+        g.db = sqlite3.connect(
+            "your-database-file.db",
+            detect_types=sqlite3.PARSE_DECLTYPES
+        )
+        g.db.row_factory = sqlite3.Row
+
+    return g.db
 
 @app.route('/employee', methods=['POST', 'PUT', 'DELETE'])
 @app.route('/employee/<name>', methods=['GET'])
 def employee(name = None):
-    """データベースにアクセスする
-
     """
-    def get_db():
+    データベースへの接続を行う
+    """
+    db = get_db()
     curs = db.cursor()
+    
     curs.execute(
         'CREATE TABLE IF NOT EXISTS persons('
         'id INTEGER PRIMARY KEY AUTOINCREMENT , name STRING)'
-        )
+    )
     db.commit()
     
     name = request.values.get('name', name)
@@ -54,7 +60,8 @@ def employee(name = None):
     if request.method == 'POST':
         cors.execute(f'INSERT INTO persons(name) values("{name}")')
         db.commit()
-        return f'created {name}' 201
+        return f'created {name}' , 201
+
     
     """
     PUTメソッドの場合はデータベースの値を更新する
