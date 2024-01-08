@@ -7,9 +7,9 @@ logging.basicConfig(
   level=logging.DEBUG, format='%(threadName)s: %(message)s')
 
 
-def worker1():
+def worker1(d):
   logging.debug('start')
-  time.sleep(5)
+  i = d['X']
   logging.debug('end')
  
 def worker2():
