@@ -4,7 +4,12 @@ class Cal(object):
         
         >>> c = Cal()
         >>> c.add_num_and_double(1, 1)
-        5
+        4
+        
+        >>> c.add_num_and_double('1', '1')
+        Traceback (most recent call last):
+            ...
+        ValueError
         """
         result = x + y
         result *= 2
