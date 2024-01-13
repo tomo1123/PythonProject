@@ -3,7 +3,7 @@ import pytest
 import calculation
 
 class TestCal(object):
-    def setUp_method(self, method):
+    def setup_method(self, method):
         print('method={}'.format(method.__name__))
         self.cal = calculation.Cal()
         
@@ -12,9 +12,11 @@ class TestCal(object):
         del self.cal
         
     def test_add_num_and_double(self):
-        cal = calculation.Cal()
         assert cal.add_num_and_double(1, 1) == 4
         
+    # @pytest.mark.skip(reason='skip!')
+    @pytest.mark.skipif(is_release=True, reason='skip!')
+       
     def test_add_num_and_double_raise(self):
         with self.assertRaises(ValueError):
             cal = calculation.Cal()
