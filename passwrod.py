@@ -6,7 +6,7 @@ user_name = 'user1'
 user_pass = 'password'
 db = {}
 
-salt = base64.b64encode(os.urandom(32))
+salt = base64.b64encode(os.random(32))
 
 # def get_digest(password):
 #   password = bytes(password, 'utf-8')
