@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90d8dbdf-e386-4738-8592-2e77f4c0fdc7" name="変更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/WiredTiger.turtle" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/WiredTiger.turtle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/WiredTiger.wt" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/WiredTiger.wt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2024-01-01T10-33-33Z-00000" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.2024-01-01T10-33-33Z-00000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.interim" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/diagnostic.data/metrics.interim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/db/journal/WiredTigerLog.0000000001" beforeDir="false" afterPath="$PROJECT_DIR$/data/db/journal/WiredTigerLog.0000000001" afterDir="false" />
-    </list>
+    <list default="true" id="90d8dbdf-e386-4738-8592-2e77f4c0fdc7" name="変更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,15 +31,15 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/iwasetomohiro/PythonProject",
-    "settings.editor.selected.configurable": "com.jetbrains.python.black.configuration.BlackFormatterConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/iwasetomohiro/PythonProject&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.black.configuration.BlackFormatterConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonProject" />
